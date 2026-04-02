@@ -1,0 +1,24 @@
+digraph G {
+"base_link" -> "imu_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1757.040 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "inertial_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1757.040 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "laser_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1757.040 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fl_castor_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"fl_castor_link" -> "fl_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"base_link" -> "fr_castor_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"fr_castor_link" -> "fr_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"base_link" -> "left_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"base_link" -> "right_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"base_link" -> "rl_castor_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"rl_castor_link" -> "rl_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"base_link" -> "rr_castor_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"rr_castor_link" -> "rr_wheel_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 50.223 Hz\nMost recent transform: 1757.030 ( 0.010 sec old)\nBuffer length: 4.480 sec\n"];
+"map" -> "odom"[label="Broadcaster: /slam_gmapping\nAverage rate: 20.225 Hz\nMost recent transform: 1757.070 ( -0.030 sec old)\nBuffer length: 4.450 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1757.040"[ shape=plaintext ] ;
+ }->"base_link";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1757.040"[ shape=plaintext ] ;
+ }->"map";
+}

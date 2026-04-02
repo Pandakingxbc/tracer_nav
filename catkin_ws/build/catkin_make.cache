@@ -1,0 +1,2 @@
+openslam_gmapping:slam_gmapping/gmapping:slam_gmapping/slam_gmapping:teleop_twist_keyboard:tracer_ros/tracer_base:tracer_ros/tracer_bringup:tracer_ros/tracer_description:tracer_ros/tracer_gazebo_sim:tracer_ros/tracer_msgs:tracer_ros/tracer_navigation:tracer_ros/tracer_slam:ugv_sdk
+-DCATKIN_DEVEL_PREFIX=/home/yangz/ROS1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yangz/ROS1/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/yangz/ROS1/catkin_ws/install
+
+Name: tracer_navigation
+Description: Description of tracer_navigation
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
